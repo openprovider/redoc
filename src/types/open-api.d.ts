@@ -244,6 +244,7 @@ export interface OpenAPISecurityScheme {
     };
   };
   openIdConnectUrl?: string;
+  'x-linkTo'?: string;
 }
 
 export interface OpenAPITag {
