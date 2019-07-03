@@ -9,7 +9,7 @@ import { MenuItemLabel, MenuItemLi, MenuItemTitle, OperationBadge } from './styl
 
 export interface MenuItemProps {
   item: IMenuItem;
-  onActivate?: (item: IMenuItem) => void;
+  onActivate?: (item?: IMenuItem) => void;
   withoutChildren?: boolean;
 }
 
@@ -18,7 +18,9 @@ export class MenuItem extends React.Component<MenuItemProps> {
   ref: Element | null;
 
   activate = (evt: React.MouseEvent<HTMLElement>) => {
-    this.props.onActivate!(this.props.item);
+    const isActive = this.props.item.active;
+
+    this.props.onActivate!(!isActive ? this.props.item : void 0);
     evt.stopPropagation();
   };
 

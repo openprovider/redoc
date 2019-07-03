@@ -223,6 +223,8 @@ export class MenuStore {
       item.collapse();
       item = item.parent;
     }
+
+    this.activeItemIdx = -1;
   }
 
   /**

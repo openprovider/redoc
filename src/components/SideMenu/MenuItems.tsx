@@ -9,7 +9,7 @@ import { MenuItemUl } from './styled.elements';
 export interface MenuItemsProps {
   items: IMenuItem[];
   expanded?: boolean;
-  onActivate?: (item: IMenuItem) => void;
+  onActivate?: (item?: IMenuItem) => void;
   style?: React.CSSProperties;
   root?: boolean;
 
