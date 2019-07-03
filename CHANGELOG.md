@@ -1,4 +1,4 @@
-# [2.0.0-rc.8-4](https://github.com/Rebilly/ReDoc/compare/v2.0.0-rc.8...v2.0.0-rc.8-4) (2019-05-13)
+# [2.0.0-rc.8-5](https://github.com/Rebilly/ReDoc/compare/v2.0.0-rc.8...v2.0.0-rc.8-5) (2019-05-13)
 
 
 ### Bug Fixes
